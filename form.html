@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form Tag Example</title>
+</head>
+<body>
+    <h1>HTML &lt;form&gt; Tag Demo</h1>
+
+    <p>The form below collects basic user information.</p>
+
+    <!-- Form begins -->
+    <form action="#" method="post">
+        <fieldset>
+            <legend>User Details</legend>
+
+            <!-- Text input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+            <!-- Email input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <!-- Radio buttons -->
+            Gender:<br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <!-- Checkboxes -->
+            Choose your interests:<br>
+            <input type="checkbox" id="coding" name="interest" value="coding">
+            <label for="coding">Coding</label><br>
+            <input type="checkbox" id="music" name="interest" value="music">
+            <label for="music">Music</label><br><br>
+
+            <!-- Dropdown -->
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">--Select--</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+            </select><br><br>
+
+            <!-- Submit and Reset buttons -->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+    <!-- Form ends -->
+
+    <hr>
+    <p><strong>Note:</strong> This form doesn't send data anywhere as the <code>action="#"</code> is just a placeholder.</p>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Embed & Object Tag Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #005f8f;
+        }
+        .example {
+            margin-bottom: 40px;
+        }
+        iframe, embed, object {
+            border: 1px solid #aaa;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML &lt;embed&gt; and &lt;object&gt; Tag Demo</h1>
+
+    <div class="example">
+        <h2>1. Embed a PDF File</h2>
+        <p>Using <code>&lt;embed&gt;</code> tag to show a PDF document:</p>
+        <embed src="example.pdf" width="600" height="400" type="application/pdf">
+        <p><i>(Note: "example.pdf" must exist in the same folder as this HTML file.)</i></p>
+    </div>
+
+    <div class="example">
+        <h2>2. Embed an Audio File</h2>
+        <p>Using <code>&lt;embed&gt;</code> tag for audio:</p>
+        <embed src="audio.mp3" width="300" height="50" type="audio/mpeg">
+        <p><i>(Note: "audio.mp3" must exist in the same folder as this HTML file.)</i></p>
+    </div>
+
+    <div class="example">
+        <h2>3. Embed a YouTube Video</h2>
+        <p>Using <code>&lt;iframe&gt;</code> (preferred for videos):</p>
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="YouTube video player" 
+            frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="example">
+        <h2>4. Embed a PDF Using &lt;object&gt; Tag</h2>
+        <p>Using <code>&lt;object&gt;</code> tag to display a PDF:</p>
+        <object data="example.pdf" type="application/pdf" width="600" height="400">
+            <p>Your browser does not support PDFs. <a href="example.pdf">Download PDF</a>.</p>
+        </object>
+    </div>
+
+    <hr>
+    <p>📄 Make sure you have media files like <strong>example.pdf</strong> and <strong>audio.mp3</strong> in the same folder, or replace with your own file URLs.</p>
+</body>
+</html>
