@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Note: Framesets are deprecated in HTML5. Prefer using <iframe> or CSS layouts instead. -->
+<html>
+<head>
+  <title>Online Book Store</title>
+</head>
+
+<frameset rows="20%,80%" frameborder="0" border="0" framespacing="0">
+  <frame 
+    src="top.html" 
+    name="topFrame" 
+    noresize 
+    scrolling="no" 
+    style="background-color: #333; color: white;">
+  
+  <frameset cols="20%,80%" frameborder="0" border="1" framespacing="3">
+    <frame 
+      src="left.html" 
+      name="leftFrame" 
+      noresize 
+      style="background-color: #f8f8f8; font-family: Arial;">
+    
+    <frame 
+      src="right.html" 
+      name="rightFrame" 
+      style="background-color: #ffffff;">
+  </frameset>
+</frameset>
+
+<noframes>
+  <body>
+    <p>Your browser does not support frames. Please use a modern browser.</p>
+  </body>
+</noframes>
+
+</html>

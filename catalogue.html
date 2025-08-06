@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Catalogue</title>
+
+  <style>
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header */
+    .header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo {
+      height: 50px;
+      width: auto;
+    }
+    .site-title {
+      flex-grow: 1;
+      margin-left: 20px;
+      font-size: 1.8rem;
+    }
+    .navbar {
+      display: flex;
+      gap: 15px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .navbar a:hover {
+      color: #ffd700;
+    }
+
+    /* Catalogue */
+    .catalogue-container {
+      padding: 30px;
+    }
+    .catalogue-container h2 {
+      color: #1e3a8a;
+      margin-bottom: 20px;
+    }
+    .book-section {
+      margin-bottom: 50px;
+    }
+    .book-section h3 {
+      margin-bottom: 15px;
+      color: #1e40af;
+    }
+
+    .book-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .book-table th,
+    .book-table td {
+      border: 1px solid #ddd;
+      padding: 12px 10px;
+      text-align: center;
+    }
+    .book-table th {
+      background-color: #e0e7ff;
+      color: #1e3a8a;
+      font-weight: bold;
+    }
+    .book-cover {
+      height: 80px;
+      width: auto;
+    }
+    button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      background-color: #1e40af;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #374ad0;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e5e7eb;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header, .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .navbar {
+        margin-top: 10px;
+      }
+      .book-table th, .book-table td {
+        font-size: 0.9rem;
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <img src="logo.jpeg" alt="Logo" class="logo">
+    <h1 class="site-title">Online Bookstore</h1>
+    <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="registration.html">Registration</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main class="catalogue-container">
+    <h2>Book Catalogue</h2>
+
+    <!-- CSE Section -->
+    <section id="cse" class="book-section">
+      <h3>CSE Books</h3>
+      <table class="book-table">
+        <thead>
+          <tr>
+            <th>Cover</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publication</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="xml-bible.jpg" alt="XML Bible" class="book-cover"></td>
+            <td>XML Bible</td>
+            <td>Winston</td>
+            <td>Wiley</td>
+            <td>₹40.5</td>
+            <td><button>Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td><img src="dbms.jpg" alt="DBMS" class="book-cover"></td>
+            <td>Database System Concepts</td>
+            <td>Korth</td>
+            <td>McGraw Hill</td>
+            <td>₹70</td>
+            <td><button>Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td><img src="os.jpg" alt="OS" class="book-cover"></td>
+            <td>Operating System Concepts</td>
+            <td>Silberschatz</td>
+            <td>Wiley</td>
+            <td>₹82.5</td>
+            <td><button>Add to Cart</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ECE Section -->
+    <section id="ece" class="book-section">
+      <h3>ECE Books</h3>
+      <table class="book-table">
+        <thead>
+          <tr>
+            <th>Cover</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publication</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="ai.jpg" alt="AI" class="book-cover"></td>
+            <td>Artificial Intelligence</td>
+            <td>S. Russel</td>
+            <td>Princeton Hall</td>
+            <td>₹63</td>
+            <td><button>Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td><img src="dsp.jpg" alt="DSP" class="book-cover"></td>
+            <td>Digital Signal Processing</td>
+            <td>Proakis</td>
+            <td>Pearson</td>
+            <td>₹68</td>
+            <td><button>Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td><img src="vlsi.jpg" alt="VLSI" class="book-cover"></td>
+            <td>VLSI Design</td>
+            <td>Weste</td>
+            <td>Pearson</td>
+            <td>₹75</td>
+            <td><button>Add to Cart</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- EEE Section -->
+    <section id="eee" class="book-section">
+      <h3>EEE Books</h3>
+      <table class="book-table">
+        <thead>
+          <tr>
+            <th>Cover</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publication</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="java.jpg" alt="Java" class="book-cover"></td>
+            <td>Java 2</td>
+            <td>Watson</td>
+            <td>BPB Publications</td>
+            <td>₹35.5</td>
+            <td><button>Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td><img src="ps.jpg" alt="Power Systems" class="book-cover"></td>
+            <td>Power System Analysis</td>
+            <td>Grainger</td>
+            <td>McGraw Hill</td>
+            <td>₹80</td>
+            <td><button>Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td><img src="em.jpg" alt="Machines" class="book-cover"></td>
+            <td>Electrical Machines</td>
+            <td>B.L. Theraja</td>
+            <td>S. Chand</td>
+            <td>₹60</td>
+            <td><button>Add to Cart</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CIVIL Section -->
+    <section id="civil" class="book-section">
+      <h3>CIVIL Books</h3>
+      <table class="book-table">
+        <thead>
+          <tr>
+            <th>Cover</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publication</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="html.jpg" alt="HTML" class="book-cover"></td>
+            <td>HTML in 24 Hours</td>
+            <td>Sam Peter</td>
+            <td>Sam Publication</td>
+            <td>₹50</td>
+            <td><button>Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td><img src="survey.jpg" alt="Surveying" class="book-cover"></td>
+            <td>Surveying Vol 1</td>
+            <td>B.C. Punmia</td>
+            <td>Laxmi</td>
+            <td>₹55</td>
+            <td><button>Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td><img src="structural.jpg" alt="Structures" class="book-cover"></td>
+            <td>Structural Analysis</td>
+            <td>R.C. Hibbeler</td>
+            <td>Pearson</td>
+            <td>₹90</td>
+            <td><button>Add to Cart</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+</body>
+</html>
